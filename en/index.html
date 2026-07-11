@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T&amp;S | Bringing the Value of Japan to the World</title>
+  <meta name="description" content="From sports goods to inbound souvenirs — planning, manufacturing, OEM and wholesale, all in one place." />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="T&amp;S" />
+  <meta property="og:title" content="T&amp;S | Bringing the Value of Japan to the World" />
+  <meta property="og:description" content="From sports goods to inbound souvenirs — planning, manufacturing, OEM and wholesale, all in one place." />
+  <meta property="og:url" content="https://www.tandsco.jp/en/" />
+  <meta property="og:image" content="https://www.tandsco.jp/images/ogp.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Marcellus"', '"Noto Serif JP"', 'serif'],
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+          colors: {
+            ink: '#1a1a1a',       /* 基本の黒 */
+            paper: '#edebe7',     /* 背景のオフホワイト */
+            line: '#d7d4ce',      /* 罫線 */
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased">
+
+  <!-- ============================== Header ============================== -->
+  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-line">
+    <div class="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 lg:px-10">
+      <a href="index.html" class="flex items-end gap-3">
+        <span class="font-serif text-3xl leading-none tracking-wide">T&amp;S</span>
+        <span class="text-[10px] tracking-widest text-neutral-500">Trust and Service</span>
+      </a>
+
+      <!-- PC Nav -->
+      <nav class="hidden items-center gap-7 text-[12px] tracking-[0.2em] lg:flex" aria-label="メインナビゲーション">
+        <a href="index.html" class="border-b border-ink pb-0.5">HOME</a>
+        <a href="about.html" class="pb-0.5 transition-colors hover:text-neutral-500">ABOUT</a>
+        <a href="souvenir.html" class="pb-0.5 transition-colors hover:text-neutral-500">PRODUCTS</a>
+        <a href="#oem" class="pb-0.5 transition-colors hover:text-neutral-500">OEM / ORIGINAL</a>
+        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="pb-0.5 transition-colors hover:text-neutral-500">CATALOG</a>
+        <a href="contact.html" class="pb-0.5 transition-colors hover:text-neutral-500">CONTACT</a>
+        <span class="ml-2 text-neutral-400"><a href="../index.html" class="transition-colors hover:underline">JP</a> <span class="mx-1">/</span> <span class="font-bold">EN</span></span>
+      </nav>
+
+      <!-- Hamburger (SP) -->
+      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニュー"
+              class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
+        <span class="block h-px w-6 bg-ink"></span>
+        <span class="block h-px w-6 bg-ink"></span>
+        <span class="block h-px w-6 bg-ink"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden border-t border-line bg-paper lg:hidden">
+      <nav class="flex flex-col px-6 py-4 text-sm tracking-[0.2em]" aria-label="モバイルナビゲーション">
+        <a href="index.html" class="border-b border-line py-4">HOME</a>
+        <a href="about.html" class="border-b border-line py-4">ABOUT</a>
+        <a href="souvenir.html" class="border-b border-line py-4">PRODUCTS</a>
+        <a href="#oem" class="border-b border-line py-4">OEM / ORIGINAL</a>
+        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="border-b border-line py-4">CATALOG</a>
+        <a href="contact.html" class="py-4">CONTACT</a>
+        <span class="pt-2 text-neutral-400"><a href="../index.html" class="hover:underline">JP</a> / <span class="font-bold">EN</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================== Hero ============================== -->
+  <section class="overflow-hidden">
+    <div class="mx-auto grid max-w-[1400px] gap-10 px-5 pt-12 lg:grid-cols-[360px_1fr] lg:gap-0 lg:px-0 lg:pl-10 lg:pt-0">
+
+      <!-- Left: copy -->
+      <div class="flex flex-col justify-center py-4 lg:py-20">
+        <h1 class="font-serif leading-none">
+          <span class="block text-[72px] md:text-[96px]">1000<span class="align-top text-[0.6em]">+</span></span>
+          <span class="mt-1 block text-[28px] tracking-[0.25em] md:text-[34px]">PRODUCTS</span>
+        </h1>
+        <p class="mt-6 text-lg font-medium tracking-wider">Bringing the "Value" of Japan to the World.</p>
+        <p class="mt-5 text-[13px] leading-7 text-neutral-600">
+          From sports goods to inbound souvenirs —<br class="hidden md:inline" />
+          planning, manufacturing, OEM and wholesale, all in one place.
+        </p>
+
+        <ul class="mt-10 max-w-[300px] text-[11px] tracking-[0.25em]">
+          <li><a href="../story.html" class="arrow-link flex items-center justify-between border-t border-line py-4">OUR STORY <span class="arrow">&rarr;</span></a></li>
+          <li><a href="#oem" class="arrow-link flex items-center justify-between border-t border-line py-4">OEM / ORIGINAL <span class="arrow">&rarr;</span></a></li>
+          <li><a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="arrow-link flex items-center justify-between border-t border-line py-4">CATALOG DOWNLOAD <span class="arrow">&rarr;</span></a></li>
+          <li><a href="contact.html" class="arrow-link flex items-center justify-between border-y border-line py-4">CONTACT <span class="arrow">&rarr;</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Right: 斜めパネル（PC）/ 2x2グリッド（SP） -->
+      <div class="fade-in-stagger grid grid-cols-2 gap-2 lg:h-[640px] lg:grid-cols-4 lg:gap-0">
+        <!-- panel -->
+        <a href="sports.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
+          <div class="hero-panel-inner absolute inset-0">
+            <img src="../images/top-sports.jpg" alt="スポーツ用品" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
+            <p class="font-serif text-xl tracking-wider md:text-2xl">SPORTS</p>
+            <p class="mt-1 text-[10px] tracking-[0.2em]">Sports Goods</p>
+          </div>
+        </a>
+        <a href="souvenir.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
+          <div class="hero-panel-inner absolute inset-0">
+            <img src="../images/top-souvenir.jpg" alt="インバウンド・お土産商品" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
+            <p class="font-serif text-xl leading-tight tracking-wider md:text-2xl">INBOUND<br />SOUVENIR</p>
+            <p class="mt-1 text-[10px] tracking-[0.2em]">Inbound Souvenirs</p>
+          </div>
+        </a>
+        <a href="original.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
+          <div class="hero-panel-inner absolute inset-0">
+            <img src="../images/top-original.jpg" alt="オリジナルブランド" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
+            <p class="font-serif text-xl leading-tight tracking-wider md:text-2xl">ORIGINAL<br />BRAND</p>
+            <p class="mt-1 text-[10px] tracking-[0.2em]">Original Brand</p>
+          </div>
+        </a>
+        <a href="#oem" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
+          <div class="hero-panel-inner absolute inset-0">
+            <img src="../images/top-oem.jpg" alt="OEM・オリジナル製作" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
+            <p class="font-serif text-xl tracking-wider md:text-2xl">OEM / ORIGINAL</p>
+            <p class="mt-1 text-[10px] tracking-[0.2em]">OEM / Original Production</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== Inbound Souvenir ====================== -->
+  <section class="mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-28">
+    <div class="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-14">
+
+      <!-- Left heading -->
+      <div class="fade-in">
+        <h2 class="font-serif text-3xl leading-tight tracking-wider md:text-4xl">INBOUND<br />SOUVENIR</h2>
+        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">Inbound Souvenirs</p>
+        <p class="mt-8 text-[13px] leading-8 text-neutral-600">
+          A rich lineup filled with the charm of Japan.<br />
+          Turning travel memories into keepsakes.
+        </p>
+        <a href="souvenir.html"
+           class="arrow-link mt-10 inline-flex items-center gap-4 border border-ink px-6 py-3 text-[11px] tracking-[0.25em] transition-colors hover:bg-ink hover:text-white">
+          VIEW ALL PRODUCTS <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Right category cards -->
+      <div class="space-y-2">
+        <!-- Row 1: 3 cards -->
+        <div class="fade-in-stagger grid grid-cols-1 gap-2 sm:grid-cols-3">
+          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
+            <img src="../images/top-ema.jpg" alt="絵馬" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">EMA</span>
+              <span class="mt-2 block font-serif text-4xl">50<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
+            <img src="../images/top-bookmark.jpg" alt="しおり" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">BOOKMARK</span>
+              <span class="mt-2 block font-serif text-4xl">150<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
+            <img src="../images/top-snowdome.jpg" alt="置物（スノードーム・だるま）" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">ORNAMENT</span>
+              <span class="mt-1 block text-[9px] tracking-[0.2em] text-white/70">SNOWDOME / DARUMA</span>
+              <span class="mt-2 block font-serif text-4xl">10<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+        </div>
+        <!-- Row 2: 4 cards -->
+        <div class="fade-in-stagger grid grid-cols-2 gap-2 lg:grid-cols-4">
+          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
+            <img src="../images/top-magnet.jpg" alt="マグネット" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">MAGNET</span>
+              <span class="mt-2 block font-serif text-4xl">200<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
+            <img src="../images/top-gold.jpg" alt="ゴールドシリーズ" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">GOLD SERIES</span>
+              <span class="mt-2 block font-serif text-4xl">20<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
+            <img src="../images/top-postcard.jpg" alt="ウッドポストカード" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">WOOD<br />POSTCARD</span>
+              <span class="mt-2 block font-serif text-4xl">50</span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
+            <img src="../images/top-keyholder.jpg" alt="その他商品" class="h-full w-full object-cover" />
+            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
+            <span class="absolute left-5 top-5 block text-white">
+              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">OTHER ITEMS</span>
+              <span class="mt-2 block font-serif text-4xl">100<span class="text-[0.55em]">+</span></span>
+              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== Exhibition / Retail / Factory ====================== -->
+  <section class="bg-neutral-900 text-white">
+    <div class="fade-in-stagger mx-auto grid max-w-[1400px] md:grid-cols-3">
+      <!-- Exhibition -->
+      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center px-6 py-10">
+          <h3 class="font-serif text-lg tracking-[0.15em]">EXHIBITION</h3>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Trade Shows</p>
+          <p class="mt-5 text-[11px] leading-6 text-neutral-300">We actively exhibit at trade shows in Japan and overseas, meeting buyers from around the world.</p>
+          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/top-exhibition.jpg" alt="展示会出展の様子" class="h-full min-h-[220px] w-full object-cover" />
+        </div>
+      </div>
+      <!-- Retail -->
+      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center px-6 py-10">
+          <h3 class="font-serif text-lg tracking-[0.15em]">RETAIL</h3>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Nationwide Retail</p>
+          <p class="mt-5 text-[11px] leading-6 text-neutral-300">Our products are carried nationwide — at mass retailers, airports, sports shops and gift stores.</p>
+          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/top-retail.jpg" alt="店頭での販売の様子" class="h-full min-h-[220px] w-full object-cover" />
+        </div>
+      </div>
+      <!-- Factory -->
+      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center px-6 py-10">
+          <h3 class="font-serif text-lg tracking-[0.15em]">FACTORY</h3>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Quality &amp; Production</p>
+          <p class="mt-5 text-[11px] leading-6 text-neutral-300">Working closely with partner factories, we deliver consistent quality and support small-lot production.</p>
+          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/top-factory.jpg" alt="工場での生産の様子" class="h-full min-h-[220px] w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== OEM / Original Flow ====================== -->
+  <section id="oem" class="mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-28">
+    <div class="grid gap-12 lg:grid-cols-[260px_1fr_60px]">
+
+      <!-- Left heading -->
+      <div class="fade-in">
+        <h2 class="font-serif text-2xl tracking-wider md:text-3xl">OEM / ORIGINAL</h2>
+        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">Custom production flow</p>
+        <p class="mt-8 text-[13px] leading-8 text-neutral-600">
+          One-stop support from planning and design through manufacturing and delivery.
+        </p>
+        <a href="contact.html" class="arrow-link mt-8 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
+      </div>
+
+      <!-- Steps -->
+      <ol class="fade-in-stagger grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+        <!-- step -->
+        <li class="relative">
+          <p class="flex items-baseline gap-2">
+            <span class="font-serif text-4xl">01</span>
+            <span class="text-[10px] tracking-[0.2em]">PLANNING</span>
+          </p>
+          <p class="mt-1 text-[10px] text-neutral-500">Planning &amp; Proposal</p>
+          <div class="img-zoom mt-4 overflow-hidden">
+            <img src="../images/top-step1.jpg" alt="企画・ご提案" class="aspect-[4/3] w-full object-cover" />
+          </div>
+          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
+        </li>
+        <li class="relative">
+          <p class="flex items-baseline gap-2">
+            <span class="font-serif text-4xl">02</span>
+            <span class="text-[10px] tracking-[0.2em]">DESIGN</span>
+          </p>
+          <p class="mt-1 text-[10px] text-neutral-500">Design</p>
+          <div class="img-zoom mt-4 overflow-hidden">
+            <img src="../images/top-step2.jpg" alt="デザイン設計" class="aspect-[4/3] w-full object-cover" />
+          </div>
+          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
+        </li>
+        <li class="relative">
+          <p class="flex items-baseline gap-2">
+            <span class="font-serif text-4xl">03</span>
+            <span class="text-[10px] tracking-[0.2em]">SAMPLE</span>
+          </p>
+          <p class="mt-1 text-[10px] text-neutral-500">Prototyping</p>
+          <div class="img-zoom mt-4 overflow-hidden">
+            <img src="../images/top-step3.jpg" alt="試作・サンプル" class="aspect-[4/3] w-full object-cover" />
+          </div>
+          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
+        </li>
+        <li class="relative">
+          <p class="flex items-baseline gap-2">
+            <span class="font-serif text-4xl">04</span>
+            <span class="text-[10px] tracking-[0.2em]">PRODUCTION</span>
+          </p>
+          <p class="mt-1 text-[10px] text-neutral-500">Production &amp; QC</p>
+          <div class="img-zoom mt-4 overflow-hidden">
+            <img src="../images/top-step4.jpg" alt="生産・品質管理" class="aspect-[4/3] w-full object-cover" />
+          </div>
+          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
+        </li>
+        <li>
+          <p class="flex items-baseline gap-2">
+            <span class="font-serif text-4xl">05</span>
+            <span class="text-[10px] tracking-[0.2em]">DELIVERY</span>
+          </p>
+          <p class="mt-1 text-[10px] text-neutral-500">Delivery</p>
+          <div class="img-zoom mt-4 overflow-hidden">
+            <img src="../images/top-step5.jpg" alt="納品" class="aspect-[4/3] w-full object-cover" />
+          </div>
+        </li>
+      </ol>
+
+      <!-- Vertical text -->
+      <div class="hidden items-center justify-center lg:flex">
+        <p class="vertical-text text-[11px] tracking-[0.4em] text-neutral-500">ONE STOP SOLUTION</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== New Items ====================== -->
+  <section class="mx-auto max-w-[1400px] px-5 pb-20 lg:px-10 lg:pb-28">
+    <div class="fade-in-stagger grid gap-2 md:grid-cols-[240px_1fr_1fr_1fr_1fr_1fr]">
+      <!-- Heading block -->
+      <div class="flex flex-col justify-center bg-white/60 p-8">
+        <h2 class="font-serif text-3xl leading-tight tracking-wider">NEW<br />ITEMS</h2>
+        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">New Arrivals</p>
+      </div>
+      <!-- Item images -->
+      <a href="sports.html" class="img-zoom block h-52 overflow-hidden md:h-64">
+        <img src="../images/top-new1.jpg" alt="新商品 プロテイン・シェイカー" class="h-full w-full object-cover" />
+      </a>
+      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
+        <img src="../images/top-new2.jpg" alt="新商品 キーホルダー" class="h-full w-full object-cover" />
+      </a>
+      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
+        <img src="../images/top-new3.jpg" alt="新商品 ゴールドシリーズ" class="h-full w-full object-cover" />
+      </a>
+      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
+        <img src="../images/top-new4.jpg" alt="新商品 スノードーム" class="h-full w-full object-cover" />
+      </a>
+      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
+        <img src="../images/top-new5.jpg" alt="新商品 和柄しおり" class="h-full w-full object-cover" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================== Business Partners ====================== -->
+  <section class="border-t border-line">
+    <div class="mx-auto max-w-[1400px] px-5 py-12 lg:px-10">
+      <div class="fade-in flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <div class="shrink-0">
+          <h2 class="text-sm font-bold tracking-[0.2em]">BUSINESS<br />PARTNERS</h2>
+          <p class="mt-1 text-[10px] text-neutral-500">Selected business partners</p>
+        </div>
+        <ul class="flex flex-wrap items-center gap-x-8 gap-y-4 text-[12px] font-bold tracking-wider text-neutral-700">
+          <li>Amazon Japan G.K.</li>
+          <li>Ultimate Life Co., Ltd.</li>
+          <li>EVENRIVER Co., Ltd.</li>
+          <li>Urawa Red Diamonds Co., Ltd.</li>
+          <li>OTAFUKU GLOVE Co., Ltd.</li>
+          <li>Kentai (Kenko Tairyoku Kenkyujo Co., Ltd.)</li>
+          <li>Santos Co., Ltd.</li>
+          <li>ZEN Co., Ltd.</li>
+          <li>TRIAL Holdings Inc.</li>
+          <li>Triple S Co., Ltd.</li>
+          <li>BURTLE Co., Ltd.</li>
+          <li>Pan Pacific International Holdings Corporation (PPIH)</li>
+          <li>Yunoki Co., Ltd.</li>
+          <li>Rakuten Group, Inc.</li>
+          <li class="font-normal text-neutral-400">(in no particular order)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== Footer ============================== -->
+  <footer id="contact" class="bg-neutral-900 text-white">
+    <div class="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 lg:grid-cols-[220px_1fr_auto_auto] lg:px-10">
+      <div>
+        <p class="font-serif text-3xl">T&amp;S</p>
+        <p class="mt-1 text-[10px] tracking-widest text-neutral-400">Trust and Service</p>
+      </div>
+      <div class="text-[12px] leading-7 text-neutral-300">
+        <p>T&amp;S Co., Ltd. (CEO: Takeshi Ohara)</p>
+        <p>3-8-19 Harayama, Midori-ku, Saitama City, Saitama, Japan</p>
+        <p>TEL: +81-48-714-5110 / FAX: +81-48-714-5111</p>
+        <p>MAIL: <a href="mailto:info@tandsco.jp" class="underline decoration-neutral-500 underline-offset-4 transition-colors hover:text-white">info@tandsco.jp</a></p>
+      </div>
+      <nav class="grid grid-cols-2 gap-x-14 gap-y-3 text-[11px] tracking-[0.2em] text-neutral-300 sm:grid-cols-3" aria-label="フッターナビゲーション">
+        <a href="index.html" class="transition-colors hover:text-white">HOME</a>
+        <a href="#oem" class="transition-colors hover:text-white">OEM / ORIGINAL</a>
+        <a href="contact.html" class="transition-colors hover:text-white">CONTACT</a>
+        <a href="about.html" class="transition-colors hover:text-white">ABOUT</a>
+        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="transition-colors hover:text-white">CATALOG</a>
+        <a href="souvenir.html" class="transition-colors hover:text-white">PRODUCTS</a>
+      </nav>
+      <div>
+        <a href="contact.html"
+           class="inline-flex items-center gap-3 border border-white/60 px-7 py-3 text-[11px] tracking-[0.25em] transition-colors hover:bg-white hover:text-ink">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          Contact Us
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-2 px-5 py-4 lg:px-10">
+        <a href="../privacy.html" class="text-[10px] tracking-widest text-neutral-500 transition-colors hover:text-white">Privacy Policy</a>
+        <p class="text-[10px] tracking-widest text-neutral-500">&copy; T&amp;S Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
