@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIZIN グッズ | T&amp;S</title>
+  <meta name="description" content="RIZIN FIGHTING FEDERATION ライセンスグッズのご提案。乾パン・マグカップ・ワッペン・グラス・湯呑み・傘など。" />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="T&amp;S" />
+  <meta property="og:title" content="RIZIN グッズ | T&amp;S" />
+  <meta property="og:description" content="RIZIN FIGHTING FEDERATION ライセンスグッズのご提案。乾パン・マグカップ・ワッペン・グラス・湯呑み・傘など。" />
+  <meta property="og:url" content="https://www.tandsco.jp/rizin.html" />
+  <meta property="og:image" content="https://www.tandsco.jp/images/ogp.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['"Marcellus"', '"Noto Serif JP"', 'serif'], sans: ['"Noto Sans JP"', 'sans-serif'] },
+      colors: { ink: '#1a1a1a', paper: '#edebe7', line: '#d7d4ce', rizin: '#c1121f' },
+    } } };
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased">
+
+  <!-- ============================== Header (ダーク) ============================== -->
+  <header class="sticky top-0 z-50 bg-neutral-900/90 text-white backdrop-blur border-b border-white/10">
+    <div class="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 lg:px-10">
+      <a href="index.html" class="flex items-end gap-3">
+        <span class="font-serif text-3xl leading-none tracking-wide">T&amp;S</span>
+        <span class="text-[10px] tracking-widest text-neutral-400">Trust and Service</span>
+      </a>
+      <nav class="hidden items-center gap-7 text-[12px] tracking-[0.2em] lg:flex" aria-label="メインナビゲーション">
+        <a href="index.html" class="pb-0.5 transition-colors hover:text-neutral-400">HOME</a>
+        <a href="about.html" class="pb-0.5 transition-colors hover:text-neutral-400">ABOUT</a>
+        <a href="sports.html" class="border-b border-white pb-0.5">PRODUCTS</a>
+        <a href="index.html#oem" class="pb-0.5 transition-colors hover:text-neutral-400">OEM / ORIGINAL</a>
+        <a href="files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="pb-0.5 transition-colors hover:text-neutral-400">CATALOG</a>
+        <a href="index.html#news" class="pb-0.5 transition-colors hover:text-neutral-400">NEWS</a>
+        <a href="contact.html#recruit" class="pb-0.5 transition-colors hover:text-neutral-400">RECRUIT</a>
+        <a href="contact.html" class="pb-0.5 transition-colors hover:text-neutral-400">CONTACT</a>
+        <span class="ml-2 text-neutral-500"><span class="font-bold">JP</span> <span class="mx-1">/</span> <a href="en/index.html" class="transition-colors hover:underline">EN</a></span>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニュー"
+              class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
+        <span class="block h-px w-6 bg-white"></span>
+        <span class="block h-px w-6 bg-white"></span>
+        <span class="block h-px w-6 bg-white"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-white/10 bg-neutral-900 lg:hidden">
+      <nav class="flex flex-col px-6 py-4 text-sm tracking-[0.2em]" aria-label="モバイルナビゲーション">
+        <a href="index.html" class="border-b border-white/10 py-4">HOME</a>
+        <a href="about.html" class="border-b border-white/10 py-4">ABOUT</a>
+        <a href="sports.html" class="border-b border-white/10 py-4">PRODUCTS</a>
+        <a href="index.html#oem" class="border-b border-white/10 py-4">OEM / ORIGINAL</a>
+        <a href="files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="border-b border-white/10 py-4">CATALOG</a>
+        <a href="index.html#news" class="border-b border-white/10 py-4">NEWS</a>
+        <a href="contact.html#recruit" class="border-b border-white/10 py-4">RECRUIT</a>
+        <a href="contact.html" class="py-4">CONTACT</a>
+        <span class="pt-2 text-neutral-500"><span class="font-bold">JP</span> / <a href="en/index.html" class="hover:underline">EN</a></span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================== Page Hero ============================== -->
+  <section class="relative bg-neutral-950 text-white">
+    <img src="images/rizin-hero.jpg"
+         onerror="this.onerror=null;this.src='images/sports-ti-rizin.jpg';"
+         alt="" class="absolute inset-0 h-full w-full object-cover opacity-25" />
+    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/95 via-neutral-950/70 to-neutral-950/40"></div>
+    <div class="relative mx-auto max-w-[1400px] px-5 py-16 lg:px-10 lg:py-24">
+      <nav class="text-[10px] tracking-[0.15em] text-neutral-400" aria-label="パンくずリスト">
+        <a href="index.html" class="transition-colors hover:text-white">HOME</a>
+        <span class="mx-2">&gt;</span>
+        <a href="sports.html" class="transition-colors hover:text-white">SPORTS</a>
+        <span class="mx-2">&gt;</span>
+        <span class="text-neutral-200">RIZIN GOODS</span>
+      </nav>
+      <p class="mt-10 text-[11px] tracking-[0.25em] text-rizin">RIZIN FIGHTING FEDERATION — LICENSED GOODS</p>
+      <h1 class="mt-3 font-serif text-4xl tracking-wider md:text-5xl">RIZIN ライセンスグッズ</h1>
+      <p class="mt-6 text-[15px] font-medium tracking-[0.15em]">戦う覚悟を、食卓へ。</p>
+      <p class="mt-4 max-w-lg text-[12px] leading-7 text-neutral-300">
+        RIZIN FIGHTING FEDERATION 公式ライセンスグッズのご提案。乾パンから日用品まで、RIZINの世界観を日常に届けるアイテムを展開しています。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================== Goods ============================== -->
+  <section class="mx-auto max-w-[1400px] px-5 py-14 lg:px-10 lg:py-16">
+    <div class="fade-in-stagger grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-can.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=RIZIN+CAN';"
+               alt="RIZIN 乾パン" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 乾パン</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">「戦う覚悟を、食卓へ。」をコンセプトにしたライセンス乾パン。チョコ味のパン入り。迫力あるブラック×レッドのオリジナルデザイン。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-mug-black.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=MUG';"
+               alt="RIZIN マグカップ（ブラック）" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN マグカップ（ブラック）</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">マットブラックにRIZINロゴをあしらった定番マグカップ。ロゴデザインは2タイプご用意。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-patch.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=PATCH';"
+               alt="RIZIN 刺繍ワッペン" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 刺繍ワッペン</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">エンブレム型の刺繍ワッペン。ウェアやキャップ、バッグのカスタムに。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-shotglass.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=SHOT+GLASS';"
+               alt="RIZIN ショットグラス" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN ショットグラス</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">筆致の黒い刷毛柄にロゴを重ねたショットグラス。コレクションにも最適。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-yunomi.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=YUNOMI';"
+               alt="RIZIN 湯呑み（大・小）" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 湯呑み（大・小）</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">波の墨絵をあしらった和テイストの湯呑み。大・小の2サイズ展開。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-umbrella.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=UMBRELLA';"
+               alt="RIZIN 折りたたみ傘" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 折りたたみ傘</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">大きくロゴを配した折りたたみ傘。観戦の行き帰りにも活躍します。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+          <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-coolingwear-vest.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=COOLING+VEST';"
+               alt="RIZIN 空調服®（ベスト／金網柄）" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 空調服®（ベスト／金網柄）</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">「限界を超えろ。」強力送風Wファン搭載の空調服。撥水加工・内側メッシュポケット付き。カラー：ブラック／シルバー（金網柄）、サイズ：M〜5L。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-coolingwear-jacket.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=COOLING+JACKET';"
+               alt="RIZIN 空調服®（ジャケット／スプラッシュ柄）" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 空調服®（ジャケット／スプラッシュ柄）</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">ブラック×ホワイト×レッドのRIZINオリジナルデザイン。Wファン×2・ケーブル付属（バッテリー別売）。ノースリーブタイプもあり。サイズ：M〜5L。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+      <div class="fade-in bg-white p-5">
+        <div class="img-zoom overflow-hidden border border-line">
+          <img src="images/rizin-ema.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.jp/1a1a1a/aaaaaa/500x500.png?text=RIZIN+EMA';"
+               alt="RIZIN 絵馬（必勝）" class="aspect-square w-full object-cover" />
+        </div>
+        <h3 class="mt-4 text-[14px] font-bold leading-6">RIZIN 絵馬（必勝）</h3>
+        <p class="mt-2 text-[12px] leading-6 text-neutral-600">ファイターの墨絵と「必勝」の文字をあしらった木製絵馬。願掛け・観戦のお守りに。</p>
+        <p class="mt-3 text-[11px] tracking-widest text-neutral-500">価格・ロット：お問い合わせください</p>
+      </div>
+    </div>
+    <p class="mt-10 text-[11px] leading-6 text-neutral-500">
+      掲載アイテムはライセンスグッズのご提案例です。お取り扱い・仕入れについてはお問い合わせください。
+    </p>
+    <div class="fade-in mt-8 flex flex-wrap gap-4">
+      <a href="contact.html"
+         class="arrow-link inline-flex items-center gap-4 border border-ink px-8 py-3 text-[11px] tracking-[0.25em] transition-colors hover:bg-ink hover:text-white">
+        お取引のご相談はこちら <span class="arrow">&rarr;</span>
+      </a>
+      <a href="sports.html"
+         class="arrow-link inline-flex items-center gap-4 border border-neutral-400 px-8 py-3 text-[11px] tracking-[0.25em] text-neutral-600 transition-colors hover:border-ink hover:text-ink">
+        SPORTS トップへ戻る <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================== Footer ============================== -->
+  <footer id="contact" class="border-t border-white/10 bg-neutral-900 text-white">
+    <div class="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 lg:grid-cols-[220px_1fr_auto_auto] lg:px-10">
+      <div>
+        <p class="font-serif text-3xl">T&amp;S</p>
+        <p class="mt-1 text-[10px] tracking-widest text-neutral-400">Trust and Service</p>
+      </div>
+      <div class="text-[12px] leading-7 text-neutral-300">
+        <p>株式会社T&amp;S（代表取締役　大原毅）</p>
+        <p>埼玉県さいたま市緑区原山3-8-19</p>
+        <p>TEL：048-714-5110 ／ FAX：048-714-5111</p>
+        <p>MAIL：<a href="mailto:info@tandsco.jp" class="underline decoration-neutral-500 underline-offset-4 transition-colors hover:text-white">info@tandsco.jp</a></p>
+      </div>
+      <nav class="grid grid-cols-2 gap-x-14 gap-y-3 text-[11px] tracking-[0.2em] text-neutral-300 sm:grid-cols-3" aria-label="フッターナビゲーション">
+        <a href="index.html" class="transition-colors hover:text-white">HOME</a>
+        <a href="index.html#oem" class="transition-colors hover:text-white">OEM / ORIGINAL</a>
+        <a href="contact.html#recruit" class="transition-colors hover:text-white">RECRUIT</a>
+        <a href="about.html" class="transition-colors hover:text-white">ABOUT</a>
+        <a href="files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="transition-colors hover:text-white">CATALOG</a>
+        <a href="contact.html" class="transition-colors hover:text-white">CONTACT</a>
+        <a href="sports.html" class="transition-colors hover:text-white">PRODUCTS</a>
+        <a href="index.html#news" class="transition-colors hover:text-white">NEWS</a>
+      </nav>
+      <div>
+        <a href="contact.html"
+           class="inline-flex items-center gap-3 border border-white/60 px-7 py-3 text-[11px] tracking-[0.25em] transition-colors hover:bg-white hover:text-ink">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          お問い合わせ
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-2 px-5 py-4 lg:px-10">
+        <a href="privacy.html" class="text-[10px] tracking-widest text-neutral-500 transition-colors hover:text-white">プライバシーポリシー</a>
+        <p class="text-[10px] tracking-widest text-neutral-500">&copy; T&amp;S Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
