@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>T&amp;S | Bringing the Value of Japan to the World</title>
-  <meta name="description" content="From sports goods to inbound souvenirs — planning, manufacturing, OEM and wholesale, all in one place." />
+  <title>Original Brand | T&amp;S</title>
+  <meta name="description" content="Stronger. More supple. Building your tomorrow. Original hair &amp; body care crafted by T&S." />
   <!-- OGP -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="T&amp;S" />
-  <meta property="og:title" content="T&amp;S | Bringing the Value of Japan to the World" />
-  <meta property="og:description" content="From sports goods to inbound souvenirs — planning, manufacturing, OEM and wholesale, all in one place." />
-  <meta property="og:url" content="https://www.tandsco.jp/en/" />
+  <meta property="og:title" content="Original Brand | T&amp;S" />
+  <meta property="og:description" content="Stronger. More supple. Building your tomorrow. Original hair &amp; body care crafted by T&S." />
+  <meta property="og:url" content="https://www.tandsco.jp/en/original.html" />
   <meta property="og:image" content="https://www.tandsco.jp/images/ogp.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -35,9 +35,11 @@
             sans: ['"Noto Sans JP"', 'sans-serif'],
           },
           colors: {
-            ink: '#1a1a1a',       /* 基本の黒 */
-            paper: '#edebe7',     /* 背景のオフホワイト */
-            line: '#d7d4ce',      /* 罫線 */
+            ink: '#1a1a1a',
+            paper: '#edebe7',
+            line: '#d7d4ce',
+            mocha: '#4a3f36',      /* ブランドカラー：温かみのあるブラウン */
+            'mocha-deep': '#332b24',
           },
         },
       },
@@ -50,393 +52,253 @@
 
 <body class="bg-paper font-sans text-ink antialiased">
 
-  <!-- ============================== Header ============================== -->
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-line">
+  <!-- ============================== Header (ダークブラウン) ============================== -->
+  <header class="sticky top-0 z-50 bg-mocha-deep/90 text-white backdrop-blur border-b border-white/10">
     <div class="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 lg:px-10">
       <a href="index.html" class="flex items-end gap-3">
         <span class="font-serif text-3xl leading-none tracking-wide">T&amp;S</span>
-        <span class="text-[10px] tracking-widest text-neutral-500">Trust and Service</span>
+        <span class="text-[10px] tracking-widest text-neutral-400">Trust and Service</span>
       </a>
 
       <!-- PC Nav -->
       <nav class="hidden items-center gap-7 text-[12px] tracking-[0.2em] lg:flex" aria-label="メインナビゲーション">
-        <a href="index.html" class="border-b border-ink pb-0.5">HOME</a>
-        <a href="about.html" class="pb-0.5 transition-colors hover:text-neutral-500">ABOUT</a>
-        <a href="souvenir.html" class="pb-0.5 transition-colors hover:text-neutral-500">PRODUCTS</a>
-        <a href="#oem" class="pb-0.5 transition-colors hover:text-neutral-500">OEM / ORIGINAL</a>
-        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="pb-0.5 transition-colors hover:text-neutral-500">CATALOG</a>
-        <a href="contact.html" class="pb-0.5 transition-colors hover:text-neutral-500">CONTACT</a>
-        <span class="ml-2 text-neutral-400"><a href="../index.html" class="transition-colors hover:underline">JP</a> <span class="mx-1">/</span> <span class="font-bold">EN</span></span>
+        <a href="index.html" class="pb-0.5 transition-colors hover:text-neutral-400">HOME</a>
+        <a href="about.html" class="pb-0.5 transition-colors hover:text-neutral-400">ABOUT</a>
+        <a href="original.html" class="border-b border-white pb-0.5">PRODUCTS</a>
+        <a href="index.html#oem" class="pb-0.5 transition-colors hover:text-neutral-400">OEM / ORIGINAL</a>
+        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="pb-0.5 transition-colors hover:text-neutral-400">CATALOG</a>
+        <a href="contact.html" class="pb-0.5 transition-colors hover:text-neutral-400">CONTACT</a>
+        <span class="ml-2 text-neutral-500"><a href="../original.html" class="transition-colors hover:underline">JP</a> <span class="mx-1">/</span> <span class="font-bold">EN</span></span>
       </nav>
 
       <!-- Hamburger (SP) -->
       <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニュー"
               class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
-        <span class="block h-px w-6 bg-ink"></span>
-        <span class="block h-px w-6 bg-ink"></span>
-        <span class="block h-px w-6 bg-ink"></span>
+        <span class="block h-px w-6 bg-white"></span>
+        <span class="block h-px w-6 bg-white"></span>
+        <span class="block h-px w-6 bg-white"></span>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden border-t border-line bg-paper lg:hidden">
+    <div id="mobile-menu" class="hidden border-t border-white/10 bg-mocha-deep lg:hidden">
       <nav class="flex flex-col px-6 py-4 text-sm tracking-[0.2em]" aria-label="モバイルナビゲーション">
-        <a href="index.html" class="border-b border-line py-4">HOME</a>
-        <a href="about.html" class="border-b border-line py-4">ABOUT</a>
-        <a href="souvenir.html" class="border-b border-line py-4">PRODUCTS</a>
-        <a href="#oem" class="border-b border-line py-4">OEM / ORIGINAL</a>
-        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="border-b border-line py-4">CATALOG</a>
+        <a href="index.html" class="border-b border-white/10 py-4">HOME</a>
+        <a href="about.html" class="border-b border-white/10 py-4">ABOUT</a>
+        <a href="original.html" class="border-b border-white/10 py-4">PRODUCTS</a>
+        <a href="index.html#oem" class="border-b border-white/10 py-4">OEM / ORIGINAL</a>
+        <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="border-b border-white/10 py-4">CATALOG</a>
         <a href="contact.html" class="py-4">CONTACT</a>
-        <span class="pt-2 text-neutral-400"><a href="../index.html" class="hover:underline">JP</a> / <span class="font-bold">EN</span></span>
+        <span class="pt-2 text-neutral-500"><a href="../original.html" class="hover:underline">JP</a> / <span class="font-bold">EN</span></span>
       </nav>
     </div>
   </header>
 
-  <!-- ============================== Hero ============================== -->
-  <section class="overflow-hidden">
-    <div class="mx-auto grid max-w-[1400px] gap-10 px-5 pt-12 lg:grid-cols-[360px_1fr] lg:gap-0 lg:px-0 lg:pl-10 lg:pt-0">
+  <!-- ============================== Page Hero ============================== -->
+  <section class="relative bg-mocha text-white">
+    <img src="../images/original-hero.jpg"
+         alt="アンバーボトルのシャンプー・トリートメント・ボディソープ" class="absolute inset-0 h-full w-full object-cover opacity-80" />
+    <div class="absolute inset-0 bg-gradient-to-r from-mocha-deep/90 via-mocha-deep/40 to-transparent"></div>
 
-      <!-- Left: copy -->
-      <div class="flex flex-col justify-center py-4 lg:py-20">
-        <h1 class="font-serif leading-none">
-          <span class="block text-[72px] md:text-[96px]">1000<span class="align-top text-[0.6em]">+</span></span>
-          <span class="mt-1 block text-[28px] tracking-[0.25em] md:text-[34px]">PRODUCTS</span>
-        </h1>
-        <p class="mt-6 text-lg font-medium tracking-wider">Bringing the "Value" of Japan to the World.</p>
-        <p class="mt-5 text-[13px] leading-7 text-neutral-600">
-          From sports goods to inbound souvenirs —<br class="hidden md:inline" />
-          planning, manufacturing, OEM and wholesale, all in one place.
-        </p>
+    <div class="relative mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-32">
+      <nav class="text-[10px] tracking-[0.15em] text-white/50" aria-label="パンくずリスト">
+        <a href="index.html" class="transition-colors hover:text-white">HOME</a>
+        <span class="mx-2">&gt;</span>
+        <span class="text-white/80">ORIGINAL BRAND</span>
+      </nav>
 
-        <ul class="mt-10 max-w-[300px] text-[11px] tracking-[0.25em]">
-          <li><a href="../story.html" class="arrow-link flex items-center justify-between border-t border-line py-4">OUR STORY <span class="arrow">&rarr;</span></a></li>
-          <li><a href="#oem" class="arrow-link flex items-center justify-between border-t border-line py-4">OEM / ORIGINAL <span class="arrow">&rarr;</span></a></li>
-          <li><a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="arrow-link flex items-center justify-between border-t border-line py-4">CATALOG DOWNLOAD <span class="arrow">&rarr;</span></a></li>
-          <li><a href="contact.html" class="arrow-link flex items-center justify-between border-y border-line py-4">CONTACT <span class="arrow">&rarr;</span></a></li>
-        </ul>
-      </div>
-
-      <!-- Right: 斜めパネル（PC）/ 2x2グリッド（SP） -->
-      <div class="fade-in-stagger grid grid-cols-2 gap-2 lg:h-[640px] lg:grid-cols-4 lg:gap-0">
-        <!-- panel -->
-        <a href="sports.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
-          <div class="hero-panel-inner absolute inset-0">
-            <img src="../images/top-sports.jpg" alt="スポーツ用品" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
-            <p class="font-serif text-xl tracking-wider md:text-2xl">SPORTS</p>
-            <p class="mt-1 text-[10px] tracking-[0.2em]">Sports Goods</p>
-          </div>
+      <h1 class="mt-8 font-serif text-4xl leading-tight tracking-wider md:text-6xl">ORIGINAL<br />BRAND</h1>
+      <p class="mt-4 text-[12px] tracking-[0.25em] text-white/70">Original Brand</p>
+      <p class="mt-10 text-lg font-medium leading-9 tracking-wider md:text-xl">
+        Stronger. More supple.<br />Building your tomorrow.
+      </p>
+      <p class="mt-6 max-w-md text-[13px] leading-8 text-white/80">
+        Original hair &amp; body care, crafted with care by T&amp;S for your everyday life.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#story"
+           class="arrow-link inline-flex items-center gap-4 border border-white/60 px-6 py-3 text-[12px] tracking-[0.15em] transition-colors hover:bg-white hover:text-ink">
+          Brand Concept <span class="arrow">&rarr;</span>
         </a>
-        <a href="souvenir.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
-          <div class="hero-panel-inner absolute inset-0">
-            <img src="../images/top-souvenir.jpg" alt="インバウンド・お土産商品" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
-            <p class="font-serif text-xl leading-tight tracking-wider md:text-2xl">INBOUND<br />SOUVENIR</p>
-            <p class="mt-1 text-[10px] tracking-[0.2em]">Inbound Souvenirs</p>
-          </div>
-        </a>
-        <a href="original.html" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
-          <div class="hero-panel-inner absolute inset-0">
-            <img src="../images/top-original.jpg" alt="オリジナルブランド" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
-            <p class="font-serif text-xl leading-tight tracking-wider md:text-2xl">ORIGINAL<br />BRAND</p>
-            <p class="mt-1 text-[10px] tracking-[0.2em]">Original Brand</p>
-          </div>
-        </a>
-        <a href="#oem" class="hero-panel img-zoom group relative block h-56 md:h-72 lg:h-full">
-          <div class="hero-panel-inner absolute inset-0">
-            <img src="../images/top-oem.jpg" alt="OEM・オリジナル製作" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="absolute bottom-6 left-5 z-10 text-white lg:bottom-12">
-            <p class="font-serif text-xl tracking-wider md:text-2xl">OEM / ORIGINAL</p>
-            <p class="mt-1 text-[10px] tracking-[0.2em]">OEM / Original Production</p>
-          </div>
+        <a href="https://nextprotein.stores.jp/" target="_blank" rel="noopener"
+           class="arrow-link inline-flex items-center gap-4 border border-white bg-white px-6 py-3 text-[12px] tracking-[0.15em] text-ink transition-colors hover:bg-transparent hover:text-white">
+          ONLINE STORE <span class="arrow">&nearr;</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ====================== Inbound Souvenir ====================== -->
+  <!-- ============================== Brand Story ============================== -->
+  <section id="story" class="bg-mocha-deep text-white">
+    <div class="mx-auto grid max-w-[1400px] lg:grid-cols-[380px_1fr]">
+      <!-- Left copy -->
+      <div class="fade-in flex flex-col justify-center px-5 py-16 lg:px-10 lg:py-24">
+        <h2 class="font-serif text-2xl tracking-wider md:text-3xl">BRAND STORY</h2>
+        <p class="mt-2 text-[11px] tracking-[0.2em] text-white/50">Brand Story</p>
+        <p class="mt-10 text-[13px] leading-9 text-white/80">
+          Close to your daily training,<br />
+          work and lifestyle —<br />
+          supporting your performance<br />
+          from the inside out.
+        </p>
+        <a href="../story.html"
+           class="arrow-link mt-10 inline-flex w-fit items-center gap-4 border border-white/60 px-6 py-3 text-[12px] tracking-[0.15em] transition-colors hover:bg-white hover:text-ink">
+          Learn More <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+      <!-- Right image -->
+      <div class="img-zoom relative overflow-hidden">
+        <!-- タグライン・ロゴは写真に含まれるためテキストオーバーレイなし -->
+        <img src="../images/original-story.jpg"
+             alt="シャワーを浴びる男性 — Stronger. More supple. Building your tomorrow." class="h-72 w-full object-cover md:h-96 lg:h-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== Product Lineup ============================== -->
   <section class="mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-28">
-    <div class="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-14">
-
-      <!-- Left heading -->
-      <div class="fade-in">
-        <h2 class="font-serif text-3xl leading-tight tracking-wider md:text-4xl">INBOUND<br />SOUVENIR</h2>
-        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">Inbound Souvenirs</p>
-        <p class="mt-8 text-[13px] leading-8 text-neutral-600">
-          A rich lineup filled with the charm of Japan.<br />
-          Turning travel memories into keepsakes.
-        </p>
-        <a href="souvenir.html"
-           class="arrow-link mt-10 inline-flex items-center gap-4 border border-ink px-6 py-3 text-[11px] tracking-[0.25em] transition-colors hover:bg-ink hover:text-white">
-          VIEW ALL PRODUCTS <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-
-      <!-- Right category cards -->
-      <div class="space-y-2">
-        <!-- Row 1: 3 cards -->
-        <div class="fade-in-stagger grid grid-cols-1 gap-2 sm:grid-cols-3">
-          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
-            <img src="../images/top-ema.jpg" alt="絵馬" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">EMA</span>
-              <span class="mt-2 block font-serif text-4xl">50<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
-            <img src="../images/top-bookmark.jpg" alt="しおり" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">BOOKMARK</span>
-              <span class="mt-2 block font-serif text-4xl">150<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-          <a href="souvenir.html" class="img-zoom group relative block h-56 overflow-hidden md:h-64">
-            <img src="../images/top-snowdome.jpg" alt="置物（スノードーム・だるま）" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">ORNAMENT</span>
-              <span class="mt-1 block text-[9px] tracking-[0.2em] text-white/70">SNOWDOME / DARUMA</span>
-              <span class="mt-2 block font-serif text-4xl">10<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-        </div>
-        <!-- Row 2: 4 cards -->
-        <div class="fade-in-stagger grid grid-cols-2 gap-2 lg:grid-cols-4">
-          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
-            <img src="../images/top-magnet.jpg" alt="マグネット" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">MAGNET</span>
-              <span class="mt-2 block font-serif text-4xl">200<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
-            <img src="../images/top-gold.jpg" alt="ゴールドシリーズ" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">GOLD SERIES</span>
-              <span class="mt-2 block font-serif text-4xl">20<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
-            <img src="../images/top-postcard.jpg" alt="ウッドポストカード" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">WOOD<br />POSTCARD</span>
-              <span class="mt-2 block font-serif text-4xl">50</span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-          <a href="souvenir.html" class="img-zoom group relative block h-48 overflow-hidden md:h-56">
-            <img src="../images/top-keyholder.jpg" alt="その他商品" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/15 to-transparent transition-colors group-hover:from-black/45"></span>
-            <span class="absolute left-5 top-5 block text-white">
-              <span class="block text-[11px] leading-relaxed tracking-[0.25em]">OTHER ITEMS</span>
-              <span class="mt-2 block font-serif text-4xl">100<span class="text-[0.55em]">+</span></span>
-              <span class="mt-1 block text-[9px] tracking-[0.25em]">DESIGNS</span>
-            </span>
-          </a>
-        </div>
-      </div>
+    <div class="fade-in text-center">
+      <h2 class="font-serif text-3xl tracking-wider">PRODUCT LINEUP</h2>
+      <p class="mt-2 text-[11px] tracking-[0.2em] text-neutral-500">Product Lineup</p>
     </div>
-  </section>
 
-  <!-- ====================== Exhibition / Retail / Factory ====================== -->
-  <section class="bg-neutral-900 text-white">
-    <div class="fade-in-stagger mx-auto grid max-w-[1400px] md:grid-cols-3">
-      <!-- Exhibition -->
-      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col justify-center px-6 py-10">
-          <h3 class="font-serif text-lg tracking-[0.15em]">EXHIBITION</h3>
-          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Trade Shows</p>
-          <p class="mt-5 text-[11px] leading-6 text-neutral-300">We actively exhibit at trade shows in Japan and overseas, meeting buyers from around the world.</p>
-          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="img-zoom overflow-hidden">
-          <img src="../images/top-exhibition.jpg" alt="展示会出展の様子" class="h-full min-h-[220px] w-full object-cover" />
-        </div>
-      </div>
-      <!-- Retail -->
-      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col justify-center px-6 py-10">
-          <h3 class="font-serif text-lg tracking-[0.15em]">RETAIL</h3>
-          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Nationwide Retail</p>
-          <p class="mt-5 text-[11px] leading-6 text-neutral-300">Our products are carried nationwide — at mass retailers, airports, sports shops and gift stores.</p>
-          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="img-zoom overflow-hidden">
-          <img src="../images/top-retail.jpg" alt="店頭での販売の様子" class="h-full min-h-[220px] w-full object-cover" />
-        </div>
-      </div>
-      <!-- Factory -->
-      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col justify-center px-6 py-10">
-          <h3 class="font-serif text-lg tracking-[0.15em]">FACTORY</h3>
-          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-400">Quality &amp; Production</p>
-          <p class="mt-5 text-[11px] leading-6 text-neutral-300">Working closely with partner factories, we deliver consistent quality and support small-lot production.</p>
-          <a href="about.html" class="arrow-link mt-6 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="img-zoom overflow-hidden">
-          <img src="../images/top-factory.jpg" alt="工場での生産の様子" class="h-full min-h-[220px] w-full object-cover" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== OEM / Original Flow ====================== -->
-  <section id="oem" class="mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-28">
-    <div class="grid gap-12 lg:grid-cols-[260px_1fr_60px]">
-
-      <!-- Left heading -->
-      <div class="fade-in">
-        <h2 class="font-serif text-2xl tracking-wider md:text-3xl">OEM / ORIGINAL</h2>
-        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">Custom production flow</p>
-        <p class="mt-8 text-[13px] leading-8 text-neutral-600">
-          One-stop support from planning and design through manufacturing and delivery.
-        </p>
-        <a href="contact.html" class="arrow-link mt-8 inline-flex items-center gap-3 text-[10px] tracking-[0.25em]">VIEW MORE <span class="arrow">&rarr;</span></a>
-      </div>
-
-      <!-- Steps -->
-      <ol class="fade-in-stagger grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
-        <!-- step -->
-        <li class="relative">
-          <p class="flex items-baseline gap-2">
+    <div class="fade-in-stagger mt-14 grid gap-14 md:grid-cols-3 md:gap-8">
+      <!-- Shampoo -->
+      <div class="grid grid-cols-2 items-center gap-5 md:gap-4">
+        <div>
+          <p class="flex items-baseline gap-3">
             <span class="font-serif text-4xl">01</span>
-            <span class="text-[10px] tracking-[0.2em]">PLANNING</span>
+            <span class="font-serif text-base tracking-[0.15em]">SHAMPOO</span>
           </p>
-          <p class="mt-1 text-[10px] text-neutral-500">Planning &amp; Proposal</p>
-          <div class="img-zoom mt-4 overflow-hidden">
-            <img src="../images/top-step1.jpg" alt="企画・ご提案" class="aspect-[4/3] w-full object-cover" />
-          </div>
-          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
-        </li>
-        <li class="relative">
-          <p class="flex items-baseline gap-2">
-            <span class="font-serif text-4xl">02</span>
-            <span class="text-[10px] tracking-[0.2em]">DESIGN</span>
-          </p>
-          <p class="mt-1 text-[10px] text-neutral-500">Design</p>
-          <div class="img-zoom mt-4 overflow-hidden">
-            <img src="../images/top-step2.jpg" alt="デザイン設計" class="aspect-[4/3] w-full object-cover" />
-          </div>
-          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
-        </li>
-        <li class="relative">
-          <p class="flex items-baseline gap-2">
-            <span class="font-serif text-4xl">03</span>
-            <span class="text-[10px] tracking-[0.2em]">SAMPLE</span>
-          </p>
-          <p class="mt-1 text-[10px] text-neutral-500">Prototyping</p>
-          <div class="img-zoom mt-4 overflow-hidden">
-            <img src="../images/top-step3.jpg" alt="試作・サンプル" class="aspect-[4/3] w-full object-cover" />
-          </div>
-          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
-        </li>
-        <li class="relative">
-          <p class="flex items-baseline gap-2">
-            <span class="font-serif text-4xl">04</span>
-            <span class="text-[10px] tracking-[0.2em]">PRODUCTION</span>
-          </p>
-          <p class="mt-1 text-[10px] text-neutral-500">Production &amp; QC</p>
-          <div class="img-zoom mt-4 overflow-hidden">
-            <img src="../images/top-step4.jpg" alt="生産・品質管理" class="aspect-[4/3] w-full object-cover" />
-          </div>
-          <span class="absolute -right-3.5 top-1/2 hidden text-neutral-400 lg:block" aria-hidden="true">&rarr;</span>
-        </li>
-        <li>
-          <p class="flex items-baseline gap-2">
-            <span class="font-serif text-4xl">05</span>
-            <span class="text-[10px] tracking-[0.2em]">DELIVERY</span>
-          </p>
-          <p class="mt-1 text-[10px] text-neutral-500">Delivery</p>
-          <div class="img-zoom mt-4 overflow-hidden">
-            <img src="../images/top-step5.jpg" alt="納品" class="aspect-[4/3] w-full object-cover" />
-          </div>
-        </li>
-      </ol>
-
-      <!-- Vertical text -->
-      <div class="hidden items-center justify-center lg:flex">
-        <p class="vertical-text text-[11px] tracking-[0.4em] text-neutral-500">ONE STOP SOLUTION</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== New Items ====================== -->
-  <section class="mx-auto max-w-[1400px] px-5 pb-20 lg:px-10 lg:pb-28">
-    <div class="fade-in-stagger grid gap-2 md:grid-cols-[240px_1fr_1fr_1fr_1fr_1fr]">
-      <!-- Heading block -->
-      <div class="flex flex-col justify-center bg-white/60 p-8">
-        <h2 class="font-serif text-3xl leading-tight tracking-wider">NEW<br />ITEMS</h2>
-        <p class="mt-3 text-[11px] tracking-[0.2em] text-neutral-500">New Arrivals</p>
-      </div>
-      <!-- Item images -->
-      <a href="sports.html" class="img-zoom block h-52 overflow-hidden md:h-64">
-        <img src="../images/top-new1.jpg" alt="新商品 プロテイン・シェイカー" class="h-full w-full object-cover" />
-      </a>
-      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
-        <img src="../images/top-new2.jpg" alt="新商品 キーホルダー" class="h-full w-full object-cover" />
-      </a>
-      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
-        <img src="../images/top-new3.jpg" alt="新商品 ゴールドシリーズ" class="h-full w-full object-cover" />
-      </a>
-      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
-        <img src="../images/top-new4.jpg" alt="新商品 スノードーム" class="h-full w-full object-cover" />
-      </a>
-      <a href="souvenir.html" class="img-zoom block h-52 overflow-hidden md:h-64">
-        <img src="../images/top-new5.jpg" alt="新商品 和柄しおり" class="h-full w-full object-cover" />
-      </a>
-    </div>
-  </section>
-
-  <!-- ====================== Business Partners ====================== -->
-  <section class="border-t border-line">
-    <div class="mx-auto max-w-[1400px] px-5 py-12 lg:px-10">
-      <div class="fade-in flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:gap-12">
-        <div class="shrink-0">
-          <h2 class="text-sm font-bold tracking-[0.2em]">BUSINESS<br />PARTNERS</h2>
-          <p class="mt-1 text-[10px] text-neutral-500">Selected business partners</p>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-500">Shampoo</p>
+          <p class="mt-5 text-[11px] leading-7 text-neutral-600">Amino-acid cleansing gently washes hair and scalp, for healthy, resilient hair.</p>
+          <a href="../product-shampoo.html" class="mt-6 inline-flex items-center gap-3 border border-ink px-5 py-2.5 text-[11px] tracking-[0.15em] transition-colors hover:bg-ink hover:text-white">Learn More <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <ul class="flex flex-wrap items-center gap-x-8 gap-y-4 text-[12px] font-bold tracking-wider text-neutral-700">
-          <li>Amazon Japan G.K.</li>
-          <li>Ultimate Life Co., Ltd.</li>
-          <li>EVENRIVER Co., Ltd.</li>
-          <li>Urawa Red Diamonds Co., Ltd.</li>
-          <li>OTAFUKU GLOVE Co., Ltd.</li>
-          <li>Kentai (Kenko Tairyoku Kenkyujo Co., Ltd.)</li>
-          <li>Santos Co., Ltd.</li>
-          <li>ZEN Co., Ltd.</li>
-          <li>TRIAL Holdings Inc.</li>
-          <li>Triple S Co., Ltd.</li>
-          <li>BURTLE Co., Ltd.</li>
-          <li>Pan Pacific International Holdings Corporation (PPIH)</li>
-          <li>Yunoki Co., Ltd.</li>
-          <li>Rakuten Group, Inc.</li>
-          <li class="font-normal text-neutral-400">(in no particular order)</li>
-        </ul>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/original-shampoo.jpg" alt="プロテインシャンプー" class="aspect-[10/13] w-full object-cover" />
+        </div>
+      </div>
+      <!-- Treatment -->
+      <div class="grid grid-cols-2 items-center gap-5 md:gap-4">
+        <div>
+          <p class="flex items-baseline gap-3">
+            <span class="font-serif text-4xl">02</span>
+            <span class="font-serif text-base tracking-[0.15em]">TREATMENT</span>
+          </p>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-500">Treatment</p>
+          <p class="mt-5 text-[11px] leading-7 text-neutral-600">Repairs damage for smooth, manageable hair — ideal after training.</p>
+          <a href="../product-treatment.html" class="mt-6 inline-flex items-center gap-3 border border-ink px-5 py-2.5 text-[11px] tracking-[0.15em] transition-colors hover:bg-ink hover:text-white">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/original-treatment.jpg" alt="プロテイントリートメント" class="aspect-[10/13] w-full object-cover" />
+        </div>
+      </div>
+      <!-- Body soap -->
+      <div class="grid grid-cols-2 items-center gap-5 md:gap-4">
+        <div>
+          <p class="flex items-baseline gap-3">
+            <span class="font-serif text-4xl">03</span>
+            <span class="font-serif text-base tracking-[0.15em]">BODY SOAP</span>
+          </p>
+          <p class="mt-1 text-[10px] tracking-[0.2em] text-neutral-500">Body Soap</p>
+          <p class="mt-5 text-[11px] leading-7 text-neutral-600">Plant-based cleansing washes away sweat and dirt, leaving skin moisturized.</p>
+          <a href="../product-bodysoap.html" class="mt-6 inline-flex items-center gap-3 border border-ink px-5 py-2.5 text-[11px] tracking-[0.15em] transition-colors hover:bg-ink hover:text-white">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="img-zoom overflow-hidden">
+          <img src="../images/original-bodysoap.jpg" alt="ボディソープ" class="aspect-[10/13] w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 特長5項目（ダーク帯） ============================== -->
+  <section class="bg-mocha-deep text-white">
+    <ul class="fade-in-stagger mx-auto grid max-w-[1400px] grid-cols-1 gap-y-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-5 lg:divide-x lg:divide-white/15 lg:px-10 lg:py-16">
+      <li class="px-5 text-center">
+        <svg class="mx-auto h-9 w-9 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.5-1.5-7-5-7-9 0-2 .7-4.2 2.2-5.8C8.7 4.6 10.5 3.5 12 3c-.3 1.7 0 3.5 1.2 5 .8 1 2 1.7 2.8 2.8 1.7 2.4 1.4 5.8-.6 7.9A8.6 8.6 0 0112 21z" /></svg>
+        <h3 class="mt-4 text-[12px] font-bold tracking-widest">Plant-Derived Ingredients</h3>
+        <p class="mt-3 text-[11px] leading-6 text-white/60">A natural formula, gentle on skin and hair.</p>
+      </li>
+      <li class="px-5 text-center">
+        <svg class="mx-auto h-9 w-9 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75c2.5 3.5 5.25 6.5 5.25 9.75a5.25 5.25 0 11-10.5 0c0-3.25 2.75-6.25 5.25-9.75zM9.75 13.5a2.25 2.25 0 002.25 2.25" /></svg>
+        <h3 class="mt-4 text-[12px] font-bold tracking-widest">Amino-Acid Cleansing</h3>
+        <p class="mt-3 text-[11px] leading-6 text-white/60">Cleanses while protecting moisture.</p>
+      </li>
+      <li class="px-5 text-center">
+        <svg class="mx-auto h-9 w-9 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>
+        <h3 class="mt-4 text-[12px] font-bold tracking-widest">Performance Support</h3>
+        <p class="mt-3 text-[11px] leading-6 text-white/60">Supports recovery after training.</p>
+      </li>
+      <li class="px-5 text-center">
+        <svg class="mx-auto h-9 w-9 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+        <h3 class="mt-4 text-[12px] font-bold tracking-widest">No Coloring, Silicone-Free</h3>
+        <p class="mt-3 text-[11px] leading-6 text-white/60">For daily use — nothing unnecessary added.</p>
+      </li>
+      <li class="px-5 text-center">
+        <svg class="mx-auto h-9 w-9 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3h4.5M10.5 3v2.25c0 .414-.168.81-.44 1.102A6.75 6.75 0 1013.94 6.35a1.593 1.593 0 01-.44-1.1V3" /></svg>
+        <h3 class="mt-4 text-[12px] font-bold tracking-widest">Simple, Refined Scent</h3>
+        <p class="mt-3 text-[11px] leading-6 text-white/60">A fresh scent for any gender, any scene.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============================== Daily Care / Active Life / Quality ============================== -->
+  <section class="grid md:grid-cols-3">
+    <!-- Daily care -->
+    <div class="group relative min-h-[380px] overflow-hidden bg-mocha text-white">
+      <img src="../images/original-dailycare.jpg" alt="洗面台に並んだボトル" class="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-b from-mocha-deep/80 via-transparent to-mocha-deep/60"></div>
+      <div class="fade-in relative p-8 lg:p-10">
+        <h3 class="font-serif text-xl tracking-[0.1em]">DAILY CARE</h3>
+        <p class="mt-1 text-[10px] tracking-[0.2em] text-white/60">For daily care</p>
+        <p class="mt-6 max-w-[240px] text-[12px] leading-7 text-white/85">Reset after training. Refresh from daily fatigue with a pleasant scent.</p>
+      </div>
+    </div>
+    <!-- Active life -->
+    <div class="group relative min-h-[380px] overflow-hidden bg-neutral-800 text-white">
+      <img src="../images/original-activelife.jpg" alt="タオルとシェイカー" class="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/80 via-transparent to-neutral-950/60"></div>
+      <div class="fade-in relative p-8 lg:p-10">
+        <h3 class="font-serif text-xl tracking-[0.1em]">ACTIVE LIFE</h3>
+        <p class="mt-1 text-[10px] tracking-[0.2em] text-white/60">For active days</p>
+        <p class="mt-6 max-w-[240px] text-[12px] leading-7 text-white/85">Wash away sweat and dirt, feel clean, and move on to your next performance.</p>
+      </div>
+    </div>
+    <!-- Quality -->
+    <div class="group relative min-h-[380px] overflow-hidden bg-neutral-900 text-white">
+      <img src="../images/original-quality.jpg" alt="T&S ORIGINAL のギフトボックス" class="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/80 via-transparent to-neutral-950/60"></div>
+      <div class="fade-in relative p-8 lg:p-10">
+        <h3 class="font-serif text-xl tracking-[0.1em]">QUALITY</h3>
+        <p class="mt-1 text-[10px] tracking-[0.2em] text-white/60">Crafted quality</p>
+        <p class="mt-6 max-w-[240px] text-[12px] leading-7 text-white/85">High-quality products, delivered one-stop from planning to delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="relative bg-mocha-deep text-white">
+    <img src="../images/original-cta.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40" />
+    <div class="relative mx-auto flex max-w-[1400px] flex-col items-start gap-10 px-5 py-16 lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-20">
+      <div class="fade-in">
+        <p class="font-serif text-3xl leading-snug tracking-wide md:text-5xl">Be Stronger.<br />Be Softer. Be You.</p>
+        <p class="mt-5 text-[12px] tracking-[0.15em] text-white/70">Stronger. More supple. Building your tomorrow.</p>
+      </div>
+      <div class="fade-in flex w-full max-w-sm flex-col gap-4">
+        <a href="index.html#oem"
+           class="arrow-link flex items-center justify-between border border-white/60 px-7 py-4 text-[12px] tracking-[0.2em] transition-colors hover:bg-white hover:text-ink">
+          About OEM / Original Production <span class="arrow">&rarr;</span>
+        </a>
+        <a href="contact.html"
+           class="arrow-link flex items-center justify-between border border-white/60 px-7 py-4 text-[12px] tracking-[0.2em] transition-colors hover:bg-white hover:text-ink">
+          Contact Us <span class="arrow">&rarr;</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ============================== Footer ============================== -->
-  <footer id="contact" class="bg-neutral-900 text-white">
+  <footer id="contact" class="border-t border-white/10 bg-neutral-900 text-white">
     <div class="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 lg:grid-cols-[220px_1fr_auto_auto] lg:px-10">
       <div>
         <p class="font-serif text-3xl">T&amp;S</p>
@@ -450,11 +312,11 @@
       </div>
       <nav class="grid grid-cols-2 gap-x-14 gap-y-3 text-[11px] tracking-[0.2em] text-neutral-300 sm:grid-cols-3" aria-label="フッターナビゲーション">
         <a href="index.html" class="transition-colors hover:text-white">HOME</a>
-        <a href="#oem" class="transition-colors hover:text-white">OEM / ORIGINAL</a>
+        <a href="index.html#oem" class="transition-colors hover:text-white">OEM / ORIGINAL</a>
         <a href="contact.html" class="transition-colors hover:text-white">CONTACT</a>
         <a href="about.html" class="transition-colors hover:text-white">ABOUT</a>
         <a href="../files/ts-pamphlet.pdf" target="_blank" rel="noopener" class="transition-colors hover:text-white">CATALOG</a>
-        <a href="souvenir.html" class="transition-colors hover:text-white">PRODUCTS</a>
+        <a href="original.html" class="transition-colors hover:text-white">PRODUCTS</a>
       </nav>
       <div>
         <a href="contact.html"
