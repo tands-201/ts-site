@@ -1,0 +1,83 @@
+/* ==========================================================================
+   T&S Corporate Site - Custom Styles
+   Tailwind CSS で表現しにくい部分のみここに記述
+   ========================================================================== */
+
+/* ---- スクロールフェードイン ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* 子要素を順番にフェードインさせる */
+.fade-in-stagger > * {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fade-in-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-stagger.is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.fade-in-stagger.is-visible > *:nth-child(3) { transition-delay: 0.24s; }
+.fade-in-stagger.is-visible > *:nth-child(4) { transition-delay: 0.36s; }
+.fade-in-stagger.is-visible > *:nth-child(5) { transition-delay: 0.48s; }
+
+/* 動きを減らす設定のユーザーにはアニメーションを無効化 */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .fade-in-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---- ヒーロー：斜めパネル（PCのみ） ---- */
+@media (min-width: 1024px) {
+  .hero-panel {
+    transform: skewX(-8deg);
+    overflow: hidden;
+  }
+  .hero-panel > .hero-panel-inner {
+    transform: skewX(8deg) scale(1.25);
+  }
+}
+
+/* ---- 縦書きテキスト ---- */
+.vertical-text {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.35em;
+}
+
+/* ---- 画像ホバー（ゆっくりズーム） ---- */
+.img-zoom img {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.img-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* ---- 矢印リンクのホバー ---- */
+.arrow-link .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.arrow-link:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* ---- カルーセル：スクロールバー非表示 ---- */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
